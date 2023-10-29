@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+
+            <div class="logo">
+                <a href="index.html"><img src="{{ url_for('static', filename='images/flo-logo.png') }}" alt="Image">
+            </div>
+            <nav >
+                <ul>
+                    <li><a href="/..">Home</a></li>
+                    <li><a href="input">Calculate</a></li> 
+                    <li><a href="/symptoms">Symptoms</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+    <section class="container">
+        <br>
+        <br>
+
+        <div class="result">
+            <h2>Predicted Cycle Length:</h2>
+            <br>
+            <br>
+            <p>{{ prediction }}</p>
+        </div>
+        <br>
+        <br>
+        <!-- Left and right sections, similar to the input page -->
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Privacy</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Social Media</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Content</h3>
+            <ul>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Support</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    
+        <footer class="fot">
+            <p style="align-items: center;">&copy; 2023 Menstrual Health</p>
+        </footer>
+    </body>
+</html>

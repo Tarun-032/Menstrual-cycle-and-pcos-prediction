@@ -1,0 +1,621 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #000; /* Change the text color to black */
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+
+}
+header img{
+    padding: 0 30px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the logo size as needed */
+}
+
+header nav{
+    display: flex;
+
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url('your-image-url.jpg'); /* Add your banner image URL */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #000;
+}
+
+.banner img{
+    width: 43%;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f36f6f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border-radius: 30px;
+}
+
+.features {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.features .card {
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.card img{
+    width: 15%;
+}
+
+
+.latest-articles {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.article-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.article {
+    width: calc(33.33% - 20px); /* 20px margin between divs */
+    text-align: center;
+    margin: 10px;
+    padding: 0 0px;
+}
+
+.article img {
+    border-radius: 10px;
+    max-width: 85%;
+    height: auto;
+}
+
+.download {
+    background-color: #f5f5f5;
+    padding: 30px;
+    text-align: center;
+}
+
+.download h1 {
+    font-size: 200%;
+}
+
+.download img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px 30px;
+    text-align: right;
+    display: flex; /* Added to make columns side by side */
+    justify-content: center; /* Adjust as needed */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    padding-left: 50px;
+}
+
+/* Style the columns within the footer */
+.footer-column {
+    text-align: left;
+    padding: 0 20px; /* Add padding as needed */
+    flex: 1;
+    max-width: 20%; /* Adjust the width of each column */
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.fot{
+    text-align: center;
+}
+
+
+/*-----------------------Input---------------------------------*/
+
+/* Style the container to center content */
+.container {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the input form columns */
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    margin-left: 9.5%;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+#input-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#input-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 4%;
+}
+
+#input-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 4%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#input-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#input-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#input-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#input-form input[type="submit"]:hover {
+    background-color: #f36f6f;
+}
+
+.guidelines {
+    font-weight: bold;
+}
+
+.guidelines-list {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.guidelines-list li {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Style the submit button */
+.submit-button {
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Target the select element */
+select {
+    width: 420px; /* Set the width to 200 pixels */
+    height: 35px; /* Set the height to 30 pixels */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Alternatively, if you're using an unordered list (ul) for custom dropdowns */
+ul.dropdown {
+    width: 200px; /* Set the width to 200 pixels */
+}
+
+/* Style the list items within the dropdown (optional) */
+ul.dropdown li {
+    padding: 10px;
+    background-color: #ecde66;
+}
+
+/* Style the list items when hovered (optional) */
+ul.dropdown li:hover {
+    background-color: #ccc;
+}
+
+/*---------------symptoms-----------------*/
+
+.symp{
+align-items: center;
+margin-left: 15%;
+}
+
+.symptoms-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.symptom {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 30px 30px;
+}
+
+.symptom-image {
+    flex: 1;
+    order: 1;
+    border-radius: 10%; /* Reverse the order of image and description for every other symptom */
+    
+}
+
+.symptom-description {
+    flex: 1;
+    order: 2; /* Reverse the order of image and description for every other symptom */
+    border-radius: 10%;
+}
+
+
+/* Media queries */
+
+/* Media queries for the HTML file */
+
+/* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 5%; /* Adjust header padding for smaller screens */
+    }
+
+    .logo img {
+        width: 80px; /* Adjust logo size for smaller screens */
+    }
+
+    nav ul {
+        margin-top: 5px; /* Adjust menu margin for smaller screens */
+    }
+
+    nav ul li {
+        margin: 5px; /* Adjust menu item margin for smaller screens */
+    }
+
+    .banner h1 {
+        font-size: 24px; /* Reduce heading font size for smaller screens */
+    }
+
+    .banner p {
+        font-size: 14px; /* Reduce text size for smaller screens */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
+    }
+
+    .features .card {
+        width: 90%; /* Make feature cards full-width for smaller screens */
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .card img {
+        width: 20%; /* Reduce feature card image size for smaller screens */
+    }
+
+    .latest-articles .article {
+        width: calc(100% - 20px); /* Make articles full-width for smaller screens */
+        margin: 10px;
+    }
+
+    .article img {
+        max-width: 100%; /* Make article images responsive for smaller screens */
+    }
+
+    .download img {
+        width: 80%; /* Make download image responsive for smaller screens */
+    }
+}
+
+/* For screens with a maximum width of 480px (typically mobile phones) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 5%; /* Further adjust header padding for very small screens */
+    }
+
+    .logo img {
+        width: 60px; /* Further adjust logo size for very small screens */
+    }
+
+    nav ul {
+        margin-top: 5px; /* Further adjust menu margin for very small screens */
+    }
+
+    nav ul li {
+        margin: 5px; /* Further adjust menu item margin for very small screens */
+    }
+
+    .banner h1 {
+        font-size: 20px; /* Further reduce heading font size for very small screens */
+    }
+
+    .banner p {
+        font-size: 12px; /* Further reduce text size for very small screens */
+    }
+
+    .cta-button {
+        padding: 10px 15px; /* Further adjust button padding for very small screens */
+    }
+
+    .features .card {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card h3 {
+        font-size: 16px; /* Further adjust card heading font size for very small screens */
+    }
+
+    .card p {
+        font-size: 12px; /* Further adjust card text size for very small screens */
+    }
+
+    .card img {
+        width: 15%; /* Further reduce feature card image size for very small screens */
+    }
+
+    .latest-articles .article {
+        margin: 10px;
+    }
+
+    .article h3 {
+        font-size: 16px; /* Further adjust article heading font size for very small screens */
+    }
+
+    .article p {
+        font-size: 12px; /* Further adjust article text size for very small screens */
+    }
+
+    .download img {
+        width: 60%; /* Further reduce download image size for very small screens */
+    }
+}
+
+
+
+
+
+/* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 2%; /* Reduce header padding for smaller screens */
+    }
+
+    header img {
+        padding: 0 10px; /* Reduce logo padding for smaller screens */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduce menu item margin for smaller screens */
+    }
+
+    .banner {
+        padding: 40px 2%; /* Adjust banner padding for smaller screens */
+    }
+
+    .banner h1 {
+        font-size: 20px; /* Reduce heading font size for smaller screens */
+    }
+
+    .banner p {
+        font-size: 14px; /* Reduce text size for smaller screens */
+    }
+
+    .banner img {
+        width: 100%; /* Make banner image responsive for smaller screens */
+    }
+
+    .cta-button {
+        padding: 10px 15px; /* Adjust button padding for smaller screens */
+    }
+
+    .features .card {
+        width: 100%; /* Make feature cards full-width for smaller screens */
+    }
+
+    .card img {
+        width: 20%; /* Reduce feature card image size for smaller screens */
+    }
+
+    .latest-articles .article {
+        width: 100%; /* Make articles full-width for smaller screens */
+    }
+
+    .article img {
+        width: 80%; /* Make article images responsive for smaller screens */
+    }
+
+    .download img {
+        width: 80%; /* Make download image responsive for smaller screens */
+    }
+
+    footer {
+        padding: 20px 2%; /* Adjust footer padding for smaller screens */
+    }
+
+    .footer-column {
+        max-width: 100%; /* Make footer columns full-width for smaller screens */
+    }
+}
+
+/* For screens with a maximum width of 480px (typically mobile phones) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 2%; /* Further reduce header padding for very small screens */
+    }
+
+    header img {
+        padding: 0 5px; /* Further reduce logo padding for very small screens */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Further reduce menu item margin for very small screens */
+    }
+
+    .banner {
+        padding: 20px 2%; /* Further adjust banner padding for very small screens */
+    }
+
+    .banner h1 {
+        font-size: 18px; /* Reduce heading font size for very small screens */
+    }
+
+    .banner p {
+        font-size: 12px; /* Reduce text size for very small screens */
+    }
+
+    .banner img {
+        width: 100%; /* Make banner image fully responsive for very small screens */
+    }
+
+    .cta-button {
+        padding: 8px 12px; /* Adjust button padding for very small screens */
+    }
+
+    .features .card {
+        width: 100%; /* Make feature cards full-width for very small screens */
+    }
+
+    .card img {
+        width: 20%; /* Reduce feature card image size for very small screens */
+    }
+
+    .latest-articles .article {
+        width: 100%; /* Make articles full-width for very small screens */
+    }
+
+    .article img {
+        width: 80%; /* Make article images fully responsive for very small screens */
+    }
+
+    .download img {
+        width: 80%; /* Make download image fully responsive for very small screens */
+    }
+
+   
+}
+

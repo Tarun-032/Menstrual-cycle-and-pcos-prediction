@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menstrual Health</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="{{ url_for('static', filename='images/flo-logo.png') }}" alt="Image">
+        </div>
+        <nav >
+            <ul><li><a href="/..">Home</a></li>
+                
+                <li><a id="pcos" href="pcos">PCOS Diagnosis</a></li>
+                
+                <li><a href="input">Calculate</a></li> 
+                <li><a href="/symptoms">Symptoms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Track Your Menstrual Health</h1>
+        <img src="{{ url_for('static', filename='images/4312673.jpg') }}" alt="Image">
+
+        <p>Follow simple steps to get your predicted cycle length</p>
+        <br>
+        <a href="input" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/icon1.png') }}" alt="accurate">
+
+            <h3>Accurate predictions</h3>
+            <p>Tracking your periods and ovulation with Flo can help you calculate and predict symptoms ahead of time, getting you prepared for the days ahead.</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/icon2.png') }}" alt="Image">
+
+            <h3>Easy Steps</h3>
+            <p>Just provide basic details like your age, flow intensity, period duration, lifestyle to get you predicted cycle length values also get to know a lot about you health</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/icon3.png') }}" alt="Image">
+
+            <h3>Privacy</h3>
+            <p>With Flo, you’re in control. You trust us with your personal information, so we’re open about how we keep you safe. And we’ll never share your health data</p>
+        </div>
+    </section>
+
+<section class="latest-articles">
+    <h2>Latest Articles</h2>
+    <div class="article-row">
+        <div class="article">
+            <img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="Image">
+
+            <h3>Article 1</h3>
+            <p>How to know you’re pregnant without taking a pregnancy test.</p>
+        </div>
+        <div class="article">
+            <img src="{{ url_for('static', filename='images/img2.jpg') }}" alt="Image">
+
+            <h3>Article 2</h3>
+            <p>Why is my period late? 13 possible reasons behind your delayed period</p>
+        </div>
+        <div class="article">
+            <img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="Image">
+
+            <h3>Article 3</h3>
+            <p>Pink discharge: What is it, and why does it happen?</p>
+        </div>
+    </div>
+    <a href="/symptoms" class="cta-button">Latest Article</a>
+</section>
+
+<section class="download">
+    <h4>Download our App</h4>
+    <h1 style="font: 40px;">Know your Body.</h1><h1 style="color: #FF5A7D;">Own your Health</h1>
+    <img src="{{ url_for('static', filename='images/Qr.png') }}" alt="Image">
+
+
+</section>
+
+<br>
+
+<footer>
+    <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Privacy</h3>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Social Media</h3>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Content</h3>
+        <ul>
+            <li>Blog</li>
+            <li>FAQ</li>
+            <li>Support</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+</footer>
+
+
+
+    <footer class="fot">
+        <p style="align-items: center;">&copy; 2023 Menstrual Health</p>
+    </footer>
+</body>
+</html>
