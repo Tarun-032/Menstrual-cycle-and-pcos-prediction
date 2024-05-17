@@ -1,0 +1,410 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #000; /* Change the text color to black */
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    padding: 0 30px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the logo size as needed */
+}
+
+header nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url('your-image-url.jpg'); /* Add your banner image URL */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #000;
+}
+
+.banner img {
+    width: 43%;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f36f6f;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border-radius: 30px;
+}
+
+.features {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.features .card {
+    display: inline-block;
+    width: calc(30% - 20px); /* Adjust to fit three cards per row */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: top; /* Align the cards vertically to the top */
+    box-sizing: border-box;
+}
+
+
+
+.card img {
+    width: 50%; /* Adjust the width as needed */
+}
+
+.latest-articles {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.article-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article {
+    width: 30%; /* Adjust the width as needed */
+    text-align: center;
+    margin: 10px;
+    padding: 0 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.article img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.download {
+    background-color: #f5f5f5;
+    padding: 30px;
+    text-align: center;
+}
+
+.download h1 {
+    font-size: 200%;
+}
+
+.download img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px 30px;
+    text-align: right;
+    display: flex; /* Added to make columns side by side */
+    justify-content: center; /* Adjust as needed */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    padding-left: 50px;
+}
+
+/* Style the columns within the footer */
+.footer-column {
+    text-align: left;
+    padding: 0 20px; /* Add padding as needed */
+    flex: 1;
+    max-width: 20%; /* Adjust the width of each column */
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.fot {
+    text-align: center;
+}
+
+/*-----------------------Input---------------------------------*/
+
+/* Style the container to center content */
+.container {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the input form columns */
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    margin-left: 9.5%;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+#input-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#input-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 4%;
+}
+
+#input-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 4%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#input-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#input-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#input-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#input-form input[type="submit"]:hover {
+    background-color: #f36f6f;
+}
+
+.guidelines {
+    font-weight: bold;
+}
+
+.guidelines-list {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.guidelines-list li {
+    margin-bottom: 5px;
+}
+
+/* Style the submit button */
+.submit-button {
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Target the select element */
+select {
+    width: 420px; /* Set the width to 200 pixels */
+    height: 35px; /* Set the height to 30 pixels */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Alternatively, if you're using an unordered list (ul) for custom dropdowns */
+ul.dropdown {
+    width: 200px; /* Set the width to 200 pixels */
+}
+
+/* Style the list items within the dropdown (optional) */
+ul.dropdown li {
+    padding: 10px;
+    background-color: #ecde66;
+}
+
+/* Style the list items when hovered (optional) */
+ul.dropdown li:hover {
+    background-color: #ccc;
+}
+
+/*---------------symptoms-----------------*/
+
+.symp {
+    align-items: center;
+    margin-left: 15%;
+}
+
+.symptoms-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.symptom {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 30px 30px;
+}
+
+.symptom-image {
+    flex: 1;
+    order: 1;
+    border-radius: 10%; /* Reverse the order of image and description for every other symptom */
+}
+
+.symptom-description {
+    flex: 1;
+    order: 2; /* Reverse the order of image and description for every other symptom */
+    border-radius: 10%;
+}
+
+/* Media queries */
+
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Use Flexbox for layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style each box */
+.box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px; /* Ensures boxes don't get too small */
+}
+
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header, .features, .latest-articles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .card, .article {
+        width: 80%; /* Adjust as needed */
+    }
+}

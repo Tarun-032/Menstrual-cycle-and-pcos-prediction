@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menstrual Health Input</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="{{ url_for('static', filename='images/flo-logo.png') }}" alt="Image"></a>
+        </div>
+        <nav >
+            <ul>
+                <li><a href="/..">Home</a></li>
+                <li><a href="input">Calculate</a></li>
+                <li><a href="/symptoms">Symptoms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="left-section">
+            <img src="{{ url_for('static', filename='images/pic.jpg') }}" alt="Image">
+            <p class="guidelines">Follow these guidelines for accurate predictions:</p>
+            <ul class="guidelines-list">
+                <li>Input your age accurately.</li>
+                <li>Specify the flow intensity of your periods.</li>
+                <li>Provide the duration of your period cycle.</li>
+                <li>Describe your lifestyle factors (e.g., exercise, diet).</li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <h2>Calculate Your Cycle Now</h2>
+            <br>
+            <form id="input-form" action="/predict" method="post">
+                <label for="age">Age:</label>
+                
+                <input type="number" id="age" name="age" value="eg:23" required>
+
+                <label for="flow-intensity">Flow Intensity:</label>
+                <select type="number" id="flow-intensity" name="flow-intensity" >
+                    <option >Select  </option>
+                    <option value="1">Low</option>
+                    <option value="2">Normal</option>
+                    <option value="3">High</option>
+                    <option value="4">Very High</option>
+                    <option value="5">Irregular</option>
+                </select>
+                
+
+                <label for="period-duration">Period Duration (in days):</label>
+                <input type="number" id="period-duration" name="period-duration" required>
+
+                <label for="lifestyle">Lifestyle:</label>
+                <select type="number" id="lifestyle" name="lifestyle">
+                    <option >Select  </option>
+                    <option value="1">Active</option>
+                    <option value="2">Highly Active</option>
+                    <option value="3">Sedentary</option>
+                </select>
+
+
+                <label for="diet">Your Diet includes:</label>
+                <select type="number" id="diet" name="diet">
+                    <option >Select  </option>
+                <option value="1">Only Veg Food</option>
+                <option value="2">Veg + Non Veg Food</option>
+            </select>
+                
+
+                <label for="issue">Stress level :</label>
+                <select type="number" id="issue" name="issue" >
+                    <option >Select  </option>
+                    <option value="1">No Stress</option>
+                    <option value="2">Low</option>
+                    <option value="3">High</option>
+                    <option value="4">Very High</option>
+                </select>
+
+                <input type="submit" value="Calculate">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Privacy</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Social Media</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Content</h3>
+            <ul>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Support</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
