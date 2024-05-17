@@ -72,5 +72,4 @@ def diagnosis():
     # You can send the prediction result to a new template or page for display
     return render_template('presult.html', diag=res)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
